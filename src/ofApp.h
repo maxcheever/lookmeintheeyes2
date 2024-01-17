@@ -10,19 +10,20 @@ class ofApp : public ofBaseApp{
 		void draw() override;
 		void exit() override;
     
-    void makeFaceArr();
+        	void makeFaceArr();
+        	void makeNewFrame();
+		
+        	struct indexBrightness {
+            		int i;
+            		float brightness;
+        	};
+
+        	ofImage Face;
+        	indexBrightness faceArr[786432];
+        	ofVideoGrabber videoGrabber;
+        	ofTexture texture;
+        	ofPixels dest;
     
-    struct indexBrightness {
-        int i;
-        float brightness;
-    };
-
-    ofImage Face;
-    indexBrightness faceArr[786432];
-    ofVideoGrabber videoGrabber;
-    ofTexture texture;
-
-    unsigned char* vidOut;
-    int camWidth;
-    int camHeight;
+        	int camWidth;
+        	int camHeight;
 };
