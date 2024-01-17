@@ -19,4 +19,10 @@ class ofApp : public ofBaseApp{
 
     ofImage Face;
     indexBrightness faceArr[786432];
+    ofVideoGrabber videoGrabber;
+    ofTexture texture;
+
+    unsigned char* vidOut;
+    int camWidth;
+    int camHeight;
 };
