@@ -5,7 +5,7 @@
 ## Technical Approach
 For _Look Me in the Eyes II_, my appraoch was to essentially use the image processor from _Look Me in the Eyes I_ on each frame of incoming video. This turned out to be a lot easier than I thought, so this section will be signifigantly shorter than the corresponding section for _Look Me in the Eyes I_. To use the image processor on each frame of the incoming video, all I needed to do was change the buffer I was mapping pixels into to be an ofPixels object instead of an ofImage. I then just used this object to load the next frame of the output video.
 ### A word on sorting algorithms
-As it turns out, the threshold for how fast the sorting algorithm I had to use for the video processor was a lot higher than I expected, so the choice between sorting algorithms does not effect performance in the capacity that I expected. In other words, the choice between sorting algorithms (as long as they are sufficiently fast) is completely based on aesthetics. With this in mind, I did choose to use counting sort on the target image and intro sort on the source frame.
+As it turns out, the threshold for how fast the sorting algorithm I had to use for the video processor was a lot higher than I expected, so the choice between sorting algorithms does not effect performance in the capacity that I thought it would. In other words, the choice between sorting algorithms (as long as they are sufficiently fast) can completely be based on aesthetics. With this in mind, I chose to use counting sort on the target image and intro sort on the source frame (the combination of sorting algorithms that I found most aesthetically pleasing from _Look Me in the Eyes I_).
 
 ## Results
 
