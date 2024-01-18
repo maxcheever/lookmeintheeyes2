@@ -8,7 +8,9 @@ For _Look Me in the Eyes II_, my appraoch was to essentially use the image proce
 As it turns out, the threshold for how fast the sorting algorithm I had to use for the video processor was a lot higher than I expected, so the choice between sorting algorithms does not effect performance in the capacity that I thought it would. In other words, the choice between sorting algorithms (as long as they are sufficiently fast) can completely be based on aesthetics. With this in mind, I chose to use counting sort on the target image and intro sort on the source frame (the combination of sorting algorithms that I found most aesthetically pleasing from _Look Me in the Eyes I_).
 
 ## Results
-Just as with _Look Me in the Eyes I_, the result is not as exciting with a well-lit source. That being said, the results with a poorly lit source or a source with a lot of color are very interesting two look at. Below I have two different recordings of the processor working (you can see the source in the top left corner of the recordings), the first is me "showing" the processor a number of items and just messing around with it and the second is me "showing" it colored LED lights:
+Just as with _Look Me in the Eyes I_, the result is not as exciting with a well-lit source. That being said, the results with a poorly lit source or a source with a lot of color are very interesting two look at. Below I have two different recordings of the processor (you can see the source in the top left corner of the recordings), the first is me "showing" the processor a painting and the second is me "showing" it colored LED lights:
+
+https://github.com/maxcheever/lookmeintheeyes2/assets/74006882/d1c083c3-1ed7-473f-b8ac-b1688d809ad4
 
 https://github.com/maxcheever/lookmeintheeyes2/assets/74006882/0db615df-79ae-4cc0-98b7-63349646cb37
 
