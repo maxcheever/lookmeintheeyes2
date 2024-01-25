@@ -1,7 +1,4 @@
 # _Look Me in the Eyes II_
-
-~      ~
-<br><br><br>
 ## Technical Approach
 For _Look Me in the Eyes II_, my approach was essentially to use the image processor from _Look Me in the Eyes I_ on each frame of incoming video. This turned out to be a lot easier than I thought, so this section will be signifigantly shorter than the corresponding section for _Look Me in the Eyes I_. To use the image processor on each frame of the incoming video, all I needed to do was change the buffer I was mapping pixels into to be an ofPixels object instead of an ofImage. I then just used this object to load the next frame of the output video.
 ### A word on sorting algorithms
